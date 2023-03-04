@@ -6,7 +6,7 @@ from aiogram import Bot, Dispatcher, executor, types
 logging.basicConfig(level=logging.INFO)
 
 TOKEN = "6012629869:AAH_Ije1csNDeGhHRuj0iLs6Zwwg1AoJImM"
-MSG = "Совершал ли ты намаз сегодня, {}, а?"
+MSG = "Совершал &&&ли ты намаз сегодня, {}?"
 
 bot = Bot(token=TOKEN)
 dp = Dispatcher(bot=bot)
@@ -19,7 +19,7 @@ async def start_handler(message: types.Message):
 	logging.info(f'{user_id=} {user_full_name=} {time.asctime()}')
 	await message.reply(f"Привет, {user_full_name}!")
  
-	for i in range(10):
+	for i in range(5):
 			time.sleep(3)
 			await bot.send_message(user_id, MSG.format(user_name))
 
