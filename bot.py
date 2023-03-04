@@ -6,7 +6,7 @@ from aiogram import Bot, Dispatcher, executor, types
 logging.basicConfig(level=logging.INFO)
 
 TOKEN = "6012629869:AAH_Ije1csNDeGhHRuj0iLs6Zwwg1AoJImM"
-MSG = "Совершал &&&ли ты намаз сегодня, {}?"
+MSG = "Совершал ли ты намаз сегодня, {}?"
 
 bot = Bot(token=TOKEN)
 dp = Dispatcher(bot=bot)
