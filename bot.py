@@ -20,7 +20,7 @@ async def start_handler(message: types.Message):
 	await message.reply(f"Привет, {user_full_name}!")
  
 	for i in range(10):
-			time.sleep(5)
+			time.sleep(3)
 			await bot.send_message(user_id, MSG.format(user_name))
 
 
