@@ -23,7 +23,7 @@ async def start_handler(message: types.Message):
 	for i in range(5):
 			time.sleep(1)
 			await bot.send_message(user_id, MSG.format(user_name))
-			await bot.send_message(user_id, MSG.format(user_name))
+			await bot.send_message(user_id, MSG1.format(user_name))
 
 
 if __name__ == '__main__':
