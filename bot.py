@@ -7,6 +7,7 @@ logging.basicConfig(level=logging.INFO)
 
 TOKEN = "6012629869:AAH_Ije1csNDeGhHRuj0iLs6Zwwg1AoJImM"
 MSG = "Совершал ли ты намаз сегодня, {}?"
+MSG1 = 'Выпьешь пива, будешь ссать криво!'
 
 bot = Bot(token=TOKEN)
 dp = Dispatcher(bot=bot)
@@ -17,10 +18,11 @@ async def start_handler(message: types.Message):
 	user_name = message.from_user.first_name
 	user_full_name = message.from_user.full_name
 	logging.info(f'{user_id=} {user_full_name=} {time.asctime()}')
-	await message.reply(f"Привет, {user_full_name}!")
+	await message.reply(f"Привет, {user_full_name}! Будешь пива?")
  
-	for i in range(2):
-			time.sleep(4)
+	for i in range(5):
+			time.sleep(1)
+			await bot.send_message(user_id, MSG.format(user_name))
 			await bot.send_message(user_id, MSG.format(user_name))
 
 
