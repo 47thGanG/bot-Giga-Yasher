@@ -7,7 +7,7 @@ logging.basicConfig(level=logging.INFO)
 
 TOKEN = "6012629869:AAH_Ije1csNDeGhHRuj0iLs6Zwwg1AoJImM"
 MSG = "Совершал ли ты намаз сегодня, {}?"
-MSG1 = 'Выпьешь 3 пива, будешь ссать криво!'
+MSG1 = 'Выпьешь 4 пива, будешь ссать криво!'
 
 bot = Bot(token=TOKEN)
 dp = Dispatcher(bot=bot)
