@@ -1,0 +1,8 @@
+#cloud-config
+users:
+  - name: mynigga
+    groups: sudo
+    shell: /bin/bash
+    sudo: ['ALL=(ALL) NOPASSWD:ALL']
+    ssh_authorized_keys:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC74ilNIyKOu9vwtOzHFRi70OFWFe/wBPDIn3PFjFdOf4k9CR8UAXwS3sSMsj7nPnEGC1An4BP+3GvppEtyB1hUH+hXoN3ZrKVru6uEAPdpQLNjnyUlCmg1cordPdIhmXBMaZDch3IDq/IITjLCeq7FuQx7ACNtEIP95sRnNSd6Dn+WOR5Qz2qh0ANeiZhX7NuuIRxYl3YbN7jx8rvGmbZQBFGMyaeC6qBDxnpyYABGl7Y14WV0IidwjQRH7cbdCmnS6HnGwz+/T/Q2HZJOmlCj0VcwQVNaBGoZk7kPudKRvfjnXzJmQA2dmxoG/ISX7baMHEM+Euf+KnpWkqbVlBnZE8r0S6L424ve/YjrMcJLhBa5JVzjbNhEea9pkKcfL7Tsyxm6oN5JMV2L0G7PnqMtbbggNqLU8lZIRQU5xEi3ZODvrGI+myNpbFixeqhqSAOvE+2uo2Z/6kUO/HycBdU7q5HTtgdEgGCUIih8l+HWgNN4b2MCNgZZ81olrC+0XtM= MacbookSergeyB@MacBook-SergeyB.local
